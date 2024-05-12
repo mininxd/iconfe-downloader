@@ -36,9 +36,9 @@ fetch(repoUrl).then(res => {
     
     // download button
       // svg button
-    svgHref.setAttribute("href", item.download_url)
-    svgDown.innerText = `SVG`;
-    svgHref.append(svgDown);
+    svgHref.setAttribute("href", item.html_url)
+    svgDown.innerText = `SVG`
+    svgHref.append(svgDown)
      // png button
     var pngURL = item.download_url.replaceAll("SVG", "PNG").replaceAll("svg","png");
     pngDown.innerText = `PNG`;
