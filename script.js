@@ -3,22 +3,7 @@ import "./hover.js";
 
 var repoUrl = "https://api.github.com/repos/andregans/iconfe/contents/SVG";
 
-fetch(repoUrl , {
-  headers: {
-    /* don't worry about my token, this token not scoped to any my information,
-    this token only increase rate limit of restAPI
-    im appreciate when you change it :>
-    
-    read more :
-    https://docs.github.com/en/rest/rate-limit/rate-limit?apiVersion=2022-11-28
-    https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28
-    */
-    'Authorization': `token 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`,
-  /*                       */
-    'Accept': 'application/vnd.github+json,application/vnd.github.diff',
-    'X-GitHub-Api-Version': '2022-11-28'
-  }
-}).then(res => {
+fetch(repoUrl).then(res => {
   return res.json();
 }).then(data => {
   
