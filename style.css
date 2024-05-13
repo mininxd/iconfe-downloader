@@ -1,5 +1,7 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('loader.css');
+@import url('content.css');
 
 
 * {
@@ -35,7 +37,7 @@ nav > h1 {
   width: 75px;
   height: 75px;
   line-height: none;
-  filter: invert(1);
+  filter: invert(1) brightness(100%);
   transition: 0.3s;
 }
 .grid-item {
@@ -44,25 +46,25 @@ nav > h1 {
   grid-template-rows: repeat(1, 1fr);
   height: 100px;
   max-height: 100px;
-  background-color: #3d3d3d;
+  background-color: #323232;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .grid-item:nth-child(even) {
   background: #343434;
 }
 
 .grid-item:hover {
-  background: #555;
+  background: #3f3f3f;
 }
 .grid-item-bottom {
   height: auto;
   width: 100%;
-  background: #222;
+  background: #3f3f3f;
   overflow-X: scroll;
   overflow-Y: hidden;
   transition: 0.3s;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
 }
 
 .download-container {
@@ -83,25 +85,24 @@ max-height: 30px;
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #fefefe;
+    background-color: #fff;
     color: #000;
   }
 .grid-item {
-  background: #f5f5f5;
+  background: #E9ECEF;
 }
 .grid-item:nth-child(even) {
-  background: #f0f0f0;
+  background: #E6EAEC;
 }
 .grid-item:hover {
   background: #eee;
 }
 .grid-item-bottom {
-  background: #;
-  background: #e0e0e0;
+  background: #eee;
   color: #000;
 }
 .icon {
-  filter: brightness(100%);
+  filter: brightness(0%);
 }
 .is-dark {
   background: #222;

@@ -7,7 +7,7 @@ fetch(repoUrl).then(res => {
   return res.json();
 }).then(data => {
   totalIcons.innerHTML = data.length;
-  
+  $('.loader').css('display','none')
 /*
   $('.test').on('click', function() {
     downloadResource(data[0].download_url)})

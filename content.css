@@ -1,0 +1,23 @@
+.copyright {
+  padding: 1em 2em 1em 2em;
+  font-size: 12px;
+  opacity: 0.75;
+}
+.copyright a {
+  color: #fff;
+  text-decoration: underline;
+}
+.button-foot {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding: 1em;
+}
+.button-foot button {
+  margin: 5px;
+}
+@media (prefers-color-scheme: light) {
+  .copyright a {
+    color: #000;
+  }
+}
