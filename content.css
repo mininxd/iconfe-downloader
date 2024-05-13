@@ -16,6 +16,11 @@
 .button-foot button {
   margin: 5px;
 }
+.button-foot button:hover {
+  background: #fff;
+  color: #222; 
+}
+}
 @media (prefers-color-scheme: light) {
   .copyright a {
     color: #000;
